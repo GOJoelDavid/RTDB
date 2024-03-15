@@ -1,14 +1,6 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Temperatura App - Granda Joel
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content padding>
   <div class="thermometer">
-    <div class="mercury" [style.height.%]="temperature"></div>
+    <div class="mercury" [ngStyle]="{'background-color': getMercuryColor(), 'height.%': temperature}"></div>
   </div>
   <ion-item>
     <ion-range min="0" max="100" step="1" [(ngModel)]="temperature">
