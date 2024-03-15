@@ -1,27 +1,17 @@
-#container {
-  text-align: center;
+.thermometer {
+  background-color: #eaeaea;
+  border-radius: 10px;
+  width: 50px;
+  height: 300px;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+}
 
+.mercury {
+  background-color: #ff6347;
+  width: 100%;
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
+  bottom: 0;
+  transition: height 0.3s ease-in-out;
 }

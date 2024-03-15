@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+  temperature: number = 0;
   constructor() {}
 
 }
